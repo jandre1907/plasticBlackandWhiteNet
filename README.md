@@ -3,10 +3,18 @@ plasticBlackandWhiteNet
 
 Neuronal network based on bud and blossom idea
 
+Tests are B&W images for example.
+
+each bit of the test are under two entries, one white and one black.
+one of these two entries is active, the other is inactive.
+If bit is 1 white entry is active an black inactive.
+If bit is 0 black entry is active and white is inactive.
 
 /**
  *  TEST1
- *  create a cell A which is connected to all entry
+ *  create a a white cell Aw and a black cell Ab which are connected to all entries
+	respectively Aw is connected on all white active entries and Ab on the blacks.	
+	create a white associative cell Bw connected to Aw and Ab
  *
  *  TEST2
  *  check activity of cell A
