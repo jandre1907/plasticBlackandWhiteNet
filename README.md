@@ -3,12 +3,44 @@ plasticBlackandWhiteNet
 
 Neuronal network based on bud and blossom idea
 
+// Tests and entry
 Tests are B&W images for example.
 
 each bit of the test are under two entries, one white and one black.
 one of these two entries is active, the other is inactive.
-If bit is 1 white entry is active an black inactive.
-If bit is 0 black entry is active and white is inactive.
+* If bit is 1 white entry is active and black inactive.
+* If bit is 0 black entry is active and white is inactive.
+
+// Cells
+
+Cells have 3 main states
+	* 1
+	* 0
+	* inactive
+	
+Cells are black or white.
+
+Cells have many input and many output.
+
+// Inputs
+Inputs are connected to entries or cells.
+
+* Black or white cells at activity 1 are potential targets to be plugged by inputs of a new white cell
+* Black or white cells at activity 0 are potential targets to be plugged by inputs of a new black cell
+* Black or white inactive cells aren't targets for nothing
+
+input have an activity depending:
+* on his weight
+* on his color
+* on the activity of the source
+
+black input connected on a 0-state cell or entry is activated to 1
+
+// Bud
+If a cell is in 0 state, and output cells are inactive, then a bud cell is created.
+* This bud take the inputs in state 1 of his mother cell
+* This bud is activated
+
 
 /**
  *  TEST1
